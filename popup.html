@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>NextUp – Today’s Releases</title>
+    <link rel="stylesheet" href="popup.css" />
+    <link rel="icon" type="image/png" href="assets/icon-32.png" />
+  </head>
+
+  <body>
+    <header>
+      <div class="logo">
+        <img src="assets/icon-32.png" alt="NextUp" class="logo-icon" />
+        <h1>NextUp</h1>
+      </div>
+      <div class="date-controls">
+        <button id="prevDay" class="day-btn">&lt;</button>
+        <span id="dateLabel"></span>
+        <button id="nextDay" class="day-btn">&gt;</button>
+      </div>
+    </header>
+
+    <section id="apiKeySection" class="apiKeySection hidden">
+      <label>
+        Enter your TMDB API Key
+        <input id="tmdbApiKeyInput" placeholder="Paste TMDB key here..." />
+      </label>
+      <button id="saveApiKeyBtn">Save Key</button>
+      <small id="apiKeyStatus"></small>
+    </section>
+
+    <nav id="tabs">
+      <button data-tab="movies" class="active">Movies</button>
+      <button data-tab="tv">TV Shows</button>
+      <button data-tab="anime">Anime</button>
+    </nav>
+
+    <main id="content">
+      <div id="movies" class="tab-panel active">
+        <div id="moviesLoader" class="loader">
+          <div class="loader-icon"></div>
+        </div>
+        <div class="list" id="moviesList"></div>
+        <div class="empty" id="moviesEmpty">
+          No movie releases found for today.
+        </div>
+      </div>
+
+      <div id="tv" class="tab-panel">
+        <div id="tvLoader" class="loader">
+          <div class="loader-icon"></div>
+        </div>
+        <div class="list" id="tvList"></div>
+        <div class="empty" id="tvEmpty">No TV releases found for today.</div>
+      </div>
+
+      <div id="anime" class="tab-panel">
+        <div id="animeLoader" class="loader">
+          <div class="loader-icon"></div>
+        </div>
+        <div class="list" id="animeList"></div>
+        <div class="empty" id="animeEmpty">
+          No anime releases found for today.
+        </div>
+      </div>
+    </main>
+
+    <footer>
+      <small
+        >Powered by TMDB & AniList —
+        <a href="https://github.com/ujjwal313" target="_blank">GitHub</a></small
+      >
+    </footer>
+
+    <script src="popup.js"></script>
+  </body>
+</html>

@@ -1,0 +1,313 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+    sans-serif;
+}
+
+body {
+  width: 380px;
+  min-height: 420px;
+  background: #0f172a;
+  color: #f9fafb;
+  padding: 10px 12px;
+  display: flex;
+  flex-direction: column;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  margin-bottom: 10px;
+}
+
+main {
+  flex: 1;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.logo-icon {
+  width: 22px;
+  height: 22px;
+  object-fit: contain;
+}
+
+h1 {
+  font-size: 18px;
+  font-weight: 600;
+}
+
+#dateLabel {
+  font-size: 11px;
+  opacity: 0.7;
+}
+
+.date-controls {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 11px;
+}
+
+.day-btn {
+  background: #1e293b;
+  border: 1px solid #334155;
+  color: #e5e7eb;
+  padding: 2px 6px;
+  font-size: 11px;
+  border-radius: 6px;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.day-btn:hover {
+  background: #334155;
+}
+
+#tabs {
+  display: flex;
+  gap: 6px;
+  margin-bottom: 8px;
+}
+
+#tabs button {
+  flex: 1;
+  padding: 6px 0;
+  font-size: 12px;
+  border-radius: 999px;
+  cursor: pointer;
+  border: 1px solid #1f2937;
+  background: #020617;
+  color: #9ca3af;
+}
+
+#tabs button.active {
+  background: #2563eb;
+  border-color: #2563eb;
+  color: #ffffff;
+}
+
+.tab-panel {
+  display: none;
+  min-height: 300px;
+  position: relative;
+}
+
+.tab-panel.active {
+  display: block;
+}
+
+.loader {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  min-height: 200px;
+  width: 100%;
+  text-align: center;
+}
+
+.loader-icon {
+  width: 32px;
+  height: 32px;
+  background: url("assets/icon-16.png") center/cover no-repeat;
+  animation: spin 1s linear infinite;
+  opacity: 0.9;
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.empty {
+  text-align: center;
+  font-size: 12px;
+  opacity: 0.8;
+  margin-top: 12px;
+}
+
+.list {
+  list-style: none;
+  margin-top: 6px;
+  max-height: 290px;
+  overflow-y: auto;
+  padding-right: 4px;
+}
+
+.list::-webkit-scrollbar {
+  width: 6px;
+}
+
+.list::-webkit-scrollbar-track {
+  background: #0f172a;
+}
+
+.list::-webkit-scrollbar-thumb {
+  background: #1e293b;
+  border-radius: 10px;
+}
+
+.list::-webkit-scrollbar-thumb:hover {
+  background: #334155;
+}
+
+.card {
+  display: flex;
+  gap: 10px;
+  background: #020617;
+  border: 1px solid #1f2937;
+  padding: 8px;
+  border-radius: 10px;
+  margin-bottom: 8px;
+}
+
+.poster {
+  width: 56px;
+  height: 84px;
+  border-radius: 6px;
+  object-fit: cover;
+  flex-shrink: 0;
+}
+
+.details {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  flex: 1;
+}
+
+.title {
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.overview {
+  font-size: 11px;
+  opacity: 0.85;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.badges {
+  display: flex;
+  gap: 6px;
+}
+
+.badge {
+  font-size: 10px;
+  padding: 2px 6px;
+  border-radius: 6px;
+  font-weight: 600;
+}
+
+.episode-badge {
+  background: #2563eb;
+  color: white;
+}
+
+.season-badge {
+  background: #facc15;
+  color: #111;
+}
+
+.timer {
+  font-size: 11px;
+  font-weight: 600;
+  opacity: 0.9;
+  color: #93c5fd;
+}
+
+a {
+  font-size: 11px;
+  color: #60a5fa;
+  text-decoration: none;
+  margin-top: 4px;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+footer {
+  margin-top: 8px;
+  font-size: 9px;
+  text-align: center;
+  opacity: 0.6;
+}
+
+footer a {
+  color: #60a5fa;
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+.hidden {
+  display: none !important;
+}
+
+.apiKeySection {
+  background: #020617;
+  border: 1px solid #1e293b;
+  padding: 10px;
+  border-radius: 8px;
+  margin-bottom: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.apiKeySection label {
+  font-size: 11px;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+#tmdbApiKeyInput {
+  font-size: 12px;
+  padding: 6px;
+  border-radius: 6px;
+  border: 1px solid #334155;
+  background: #0f172a;
+  color: #e5e7eb;
+}
+
+#saveApiKeyBtn {
+  background: #22c55e;
+  color: #022c22;
+  border: none;
+  border-radius: 999px;
+  padding: 5px 10px;
+  cursor: pointer;
+  font-size: 11px;
+  font-weight: 600;
+}
+
+#saveApiKeyBtn:hover {
+  filter: brightness(1.1);
+}
+
+#apiKeyStatus {
+  font-size: 10px;
+  opacity: 0.9;
+}
