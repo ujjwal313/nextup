@@ -13,10 +13,18 @@
         <img src="assets/icon-32.png" alt="NextUp" class="logo-icon" />
         <h1>NextUp</h1>
       </div>
-      <div class="date-controls">
-        <button id="prevDay" class="day-btn">&lt;</button>
-        <span id="dateLabel"></span>
-        <button id="nextDay" class="day-btn">&gt;</button>
+
+      <div id="controls">
+        <select id="regionSelector" class="header-select">
+          <option value="GLOBAL">Global</option>
+          <option value="LOCAL">Regional</option>
+        </select>
+
+        <div class="date-controls">
+          <button id="prevDay" class="day-btn">&lt;</button>
+          <span id="dateLabel"></span>
+          <button id="nextDay" class="day-btn">&gt;</button>
+        </div>
       </div>
     </header>
 
@@ -41,7 +49,7 @@
           <div class="loader-icon"></div>
         </div>
         <div class="list" id="moviesList"></div>
-        <div class="empty" id="moviesEmpty">
+        <div class="empty hidden" id="moviesEmpty">
           No movie releases found for today.
         </div>
       </div>
@@ -51,7 +59,9 @@
           <div class="loader-icon"></div>
         </div>
         <div class="list" id="tvList"></div>
-        <div class="empty" id="tvEmpty">No TV releases found for today.</div>
+        <div class="empty hidden" id="tvEmpty">
+          No TV releases found for today.
+        </div>
       </div>
 
       <div id="anime" class="tab-panel">
@@ -59,17 +69,17 @@
           <div class="loader-icon"></div>
         </div>
         <div class="list" id="animeList"></div>
-        <div class="empty" id="animeEmpty">
+        <div class="empty hidden" id="animeEmpty">
           No anime releases found for today.
         </div>
       </div>
     </main>
 
     <footer>
-      <small
-        >Powered by TMDB & AniList —
-        <a href="https://github.com/ujjwal313" target="_blank">GitHub</a></small
-      >
+      <small>
+        Powered by TMDB & AniList —
+        <a href="https://github.com/ujjwal313" target="_blank">GitHub</a>
+      </small>
     </footer>
 
     <script src="popup.js"></script>

@@ -2,7 +2,7 @@
   "manifest_version": 3,
   "name": "NextUp – Movies, TV & Anime Releases",
   "description": "Track upcoming & past releases for Movies, TV & Anime.",
-  "version": "1.0.1",
+  "version": "1.1.1",
 
   "action": {
     "default_title": "NextUp",
@@ -23,7 +23,8 @@
   "permissions": ["storage"],
   "host_permissions": [
     "https://api.themoviedb.org/*",
-    "https://graphql.anilist.co/*"
+    "https://graphql.anilist.co/*",
+    "https://ipwho.is/*"
   ],
 
   "browser_specific_settings": {

@@ -8,126 +8,286 @@
 
 body {
   width: 380px;
-  min-height: 420px;
+  height: 520px; /* FIXED HEIGHT - Prevents all layout shifts */
   background: #0f172a;
   color: #f9fafb;
-  padding: 10px 12px;
+  padding: 12px 16px;
   display: flex;
-  flex-direction: column;
+  flex-direction: column; /* Stacks Header -> Content -> Footer */
+  position: relative;
+  overflow: hidden; /* Prevents body scrollbars */
 }
+
+.hidden {
+  display: none !important;
+}
+
+/* ================= HEADER ================= */
 
 header {
   display: flex;
   justify-content: space-between;
-  align-items: baseline;
-  margin-bottom: 10px;
-}
-
-main {
-  flex: 1;
+  align-items: center;
+  margin-bottom: 12px;
+  flex-shrink: 0; /* Prevents header from shrinking */
 }
 
 .logo {
   display: flex;
   align-items: center;
-  gap: 6px;
+  gap: 8px;
 }
 
 .logo-icon {
-  width: 22px;
-  height: 22px;
+  width: 24px;
+  height: 24px;
   object-fit: contain;
 }
 
 h1 {
   font-size: 18px;
-  font-weight: 600;
+  font-weight: 700;
+  letter-spacing: -0.5px;
 }
 
-#dateLabel {
+#controls {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+/* Region Selector */
+.header-select {
+  background: #1e293b;
+  color: #94a3b8;
+  border: 1px solid #334155;
+  border-radius: 6px;
+  padding: 4px 8px;
   font-size: 11px;
-  opacity: 0.7;
+  cursor: pointer;
+  outline: none;
+  transition: all 0.2s ease;
+}
+
+.header-select:hover {
+  background: #334155;
+  color: #f1f5f9;
+  border-color: #475569;
+}
+
+/* ================= DATE ================= */
+
+#dateLabel {
+  font-size: 12px;
+  font-weight: 500;
+  color: #e2e8f0;
+  min-width: 95px;
+  text-align: center;
 }
 
 .date-controls {
   display: flex;
   align-items: center;
-  gap: 6px;
-  font-size: 11px;
+  gap: 4px;
+  background: #1e293b;
+  padding: 2px;
+  border-radius: 8px;
+  border: 1px solid #334155;
 }
 
 .day-btn {
-  background: #1e293b;
-  border: 1px solid #334155;
-  color: #e5e7eb;
-  padding: 2px 6px;
-  font-size: 11px;
+  background: transparent;
+  border: none;
+  color: #94a3b8;
+  width: 20px;
+  height: 20px;
+  font-size: 10px;
   border-radius: 6px;
   cursor: pointer;
-  display: inline-flex;
+  display: flex;
   align-items: center;
   justify-content: center;
+  transition: all 0.2s ease;
 }
 
 .day-btn:hover {
   background: #334155;
+  color: #fff;
 }
+
+/* ================= API KEY SECTION ================= */
+
+.apiKeySection {
+  flex-shrink: 0;
+  background: #1e293b;
+  border: 1px solid #334155;
+  padding: 12px;
+  border-radius: 8px;
+  margin-bottom: 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  animation: fadeIn 0.2s ease;
+}
+
+.apiKeySection label {
+  font-size: 12px;
+  color: #e2e8f0;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+#tmdbApiKeyInput {
+  font-size: 12px;
+  padding: 8px;
+  border-radius: 6px;
+  border: 1px solid #475569;
+  background: #0f172a;
+  color: #e5e7eb;
+  outline: none;
+  transition: border-color 0.2s;
+}
+
+#tmdbApiKeyInput:focus {
+  border-color: #3b82f6;
+}
+
+#saveApiKeyBtn {
+  background: #22c55e;
+  color: #022c22;
+  border: none;
+  border-radius: 6px;
+  padding: 8px;
+  cursor: pointer;
+  font-size: 12px;
+  font-weight: 600;
+  transition: transform 0.1s, filter 0.2s;
+}
+
+#saveApiKeyBtn:hover {
+  filter: brightness(1.1);
+}
+
+/* ================= TABS ================= */
 
 #tabs {
   display: flex;
-  gap: 6px;
-  margin-bottom: 8px;
+  gap: 8px;
+  margin-bottom: 12px;
+  background: #020617;
+  padding: 4px;
+  border-radius: 99px;
+  border: 1px solid #1e293b;
+  flex-shrink: 0;
 }
 
 #tabs button {
   flex: 1;
   padding: 6px 0;
   font-size: 12px;
-  border-radius: 999px;
+  font-weight: 500;
+  border-radius: 99px;
   cursor: pointer;
-  border: 1px solid #1f2937;
-  background: #020617;
-  color: #9ca3af;
+  border: none;
+  background: transparent;
+  color: #64748b;
+  transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+#tabs button:hover {
+  color: #94a3b8;
 }
 
 #tabs button.active {
   background: #2563eb;
-  border-color: #2563eb;
   color: #ffffff;
+  box-shadow: 0 2px 10px rgba(37, 99, 235, 0.3);
+}
+
+/* ================= MAIN CONTENT (Flexible) ================= */
+
+#content {
+  flex: 1; /* Takes up all remaining vertical space */
+  position: relative; /* For absolute positioning of loaders/empty states */
+  overflow: hidden; /* Contains the scrollable lists */
+  min-height: 0; /* Important for flexbox scrolling to work */
 }
 
 .tab-panel {
   display: none;
-  min-height: 300px;
-  position: relative;
+  width: 100%;
+  height: 100%; /* Matches parent #content height exactly */
 }
 
 .tab-panel.active {
   display: block;
+  animation: fadeIn 0.3s ease;
 }
 
-.loader {
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* ================= LIST (Scrollable) ================= */
+
+.list {
+  list-style: none;
+  height: 100%; /* Full height of tab panel */
+  overflow-y: auto; /* Scroll ONLY inside this container */
+  padding-right: 6px;
+  scroll-behavior: smooth;
+  padding-bottom: 10px; /* Extra space at bottom */
+}
+
+/* Scrollbar Styling */
+.list::-webkit-scrollbar {
+  width: 5px;
+}
+
+.list::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.list::-webkit-scrollbar-thumb {
+  background: #334155;
+  border-radius: 10px;
+}
+
+.list::-webkit-scrollbar-thumb:hover {
+  background: #475569;
+}
+
+/* ================= LOADER & EMPTY STATES ================= */
+
+/* Center these perfectly in the flex container */
+.loader,
+.empty {
+  position: absolute;
+  inset: 0; /* Top/Left/Right/Bottom: 0 */
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100%;
-  min-height: 200px;
-  width: 100%;
-  text-align: center;
+  flex-direction: column;
+  background: #0f172a; /* Covers the list if loading */
+  z-index: 10;
 }
 
 .loader-icon {
-  width: 32px;
-  height: 32px;
-  background: url("assets/icon-16.png") center/cover no-repeat;
-  animation: spin 1s linear infinite;
-  opacity: 0.9;
+  width: 28px;
+  height: 28px;
+  border: 3px solid #1e293b;
+  border-top-color: #3b82f6;
+  border-radius: 50%;
+  animation: spin 0.8s linear infinite;
 }
 
 @keyframes spin {
-  from {
-    transform: rotate(0deg);
-  }
   to {
     transform: rotate(360deg);
   }
@@ -135,52 +295,51 @@ h1 {
 
 .empty {
   text-align: center;
-  font-size: 12px;
-  opacity: 0.8;
-  margin-top: 12px;
+  font-size: 13px;
+  color: #64748b;
+  background: transparent;
+  pointer-events: none;
 }
 
-.list {
-  list-style: none;
-  margin-top: 6px;
-  max-height: 290px;
-  overflow-y: auto;
-  padding-right: 4px;
-}
+/* ================= CARD ================= */
 
-.list::-webkit-scrollbar {
-  width: 6px;
-}
-
-.list::-webkit-scrollbar-track {
-  background: #0f172a;
-}
-
-.list::-webkit-scrollbar-thumb {
-  background: #1e293b;
-  border-radius: 10px;
-}
-
-.list::-webkit-scrollbar-thumb:hover {
-  background: #334155;
+@keyframes slideUpFade {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 .card {
   display: flex;
-  gap: 10px;
-  background: #020617;
-  border: 1px solid #1f2937;
-  padding: 8px;
-  border-radius: 10px;
-  margin-bottom: 8px;
+  gap: 12px;
+  background: #1e293b50;
+  border: 1px solid #1e293b;
+  padding: 10px;
+  border-radius: 12px;
+  margin-bottom: 10px;
+  transition: transform 0.2s ease, border-color 0.2s ease;
+  animation: slideUpFade 0.4s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+.card:hover {
+  background: #1e293b80;
+  border-color: #334155;
+  transform: translateY(-1px);
 }
 
 .poster {
-  width: 56px;
-  height: 84px;
-  border-radius: 6px;
+  width: 60px;
+  height: 90px;
+  border-radius: 8px;
   object-fit: cover;
   flex-shrink: 0;
+  background: #0f172a;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
 }
 
 .details {
@@ -188,126 +347,67 @@ h1 {
   flex-direction: column;
   gap: 4px;
   flex: 1;
+  min-width: 0;
 }
 
 .title {
-  font-size: 13px;
+  font-size: 14px;
   font-weight: 600;
+  color: #f1f5f9;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .overview {
   font-size: 11px;
-  opacity: 0.85;
+  color: #94a3b8;
+  line-height: 1.4;
   display: -webkit-box;
-  -webkit-line-clamp: 3;
-  line-clamp: 3;
+  -webkit-line-clamp: 2;
   -webkit-box-orient: vertical;
   overflow: hidden;
-}
-
-.badges {
-  display: flex;
-  gap: 6px;
-}
-
-.badge {
-  font-size: 10px;
-  padding: 2px 6px;
-  border-radius: 6px;
-  font-weight: 600;
-}
-
-.episode-badge {
-  background: #2563eb;
-  color: white;
-}
-
-.season-badge {
-  background: #facc15;
-  color: #111;
+  margin-bottom: auto;
 }
 
 .timer {
   font-size: 11px;
   font-weight: 600;
-  opacity: 0.9;
-  color: #93c5fd;
+  color: #60a5fa;
+  display: flex;
+  align-items: center;
+  gap: 6px;
 }
 
 a {
   font-size: 11px;
-  color: #60a5fa;
+  color: #3b82f6;
   text-decoration: none;
+  font-weight: 500;
   margin-top: 4px;
+  align-self: flex-start;
+  transition: color 0.2s;
 }
 
 a:hover {
+  color: #60a5fa;
   text-decoration: underline;
 }
 
+/* ================= FOOTER ================= */
+
 footer {
-  margin-top: 8px;
-  font-size: 9px;
+  margin-top: 10px;
+  font-size: 12px;
   text-align: center;
-  opacity: 0.6;
+  color: #475569;
+  flex-shrink: 0; /* Prevents footer compression */
 }
 
 footer a {
-  color: #60a5fa;
-  text-decoration: none;
+  color: #64748b;
 }
 
 footer a:hover {
-  text-decoration: underline;
-}
-
-.hidden {
-  display: none !important;
-}
-
-.apiKeySection {
-  background: #020617;
-  border: 1px solid #1e293b;
-  padding: 10px;
-  border-radius: 8px;
-  margin-bottom: 10px;
-  display: flex;
-  flex-direction: column;
-  gap: 6px;
-}
-
-.apiKeySection label {
-  font-size: 11px;
-  display: flex;
-  flex-direction: column;
-  gap: 4px;
-}
-
-#tmdbApiKeyInput {
-  font-size: 12px;
-  padding: 6px;
-  border-radius: 6px;
-  border: 1px solid #334155;
-  background: #0f172a;
-  color: #e5e7eb;
-}
-
-#saveApiKeyBtn {
-  background: #22c55e;
-  color: #022c22;
-  border: none;
-  border-radius: 999px;
-  padding: 5px 10px;
-  cursor: pointer;
-  font-size: 11px;
-  font-weight: 600;
-}
-
-#saveApiKeyBtn:hover {
-  filter: brightness(1.1);
-}
-
-#apiKeyStatus {
-  font-size: 10px;
-  opacity: 0.9;
+  color: #94a3b8;
 }
