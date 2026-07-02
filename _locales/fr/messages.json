@@ -1,0 +1,102 @@
+{
+  "extName": {
+    "message": "NextUp – Calendrier des sorties films, séries et animes"
+  },
+  "extDescription": {
+    "message": "Calendrier des sorties de films, séries et animes. Choisissez une date : nouveautés et où les regarder. Via TMDB et AniList."
+  },
+  "popupTitle": {
+    "message": "NextUp – Sorties du jour"
+  },
+  "regionGlobal": {
+    "message": "Mondial"
+  },
+  "regionLocal": {
+    "message": "Régional"
+  },
+  "apiKeyLabel": {
+    "message": "Entrez votre clé API TMDB"
+  },
+  "apiKeyPlaceholder": {
+    "message": "Collez votre clé TMDB ici..."
+  },
+  "apiKeySaveBtn": {
+    "message": "Enregistrer la clé"
+  },
+  "tabMovies": {
+    "message": "Films"
+  },
+  "tabTv": {
+    "message": "Séries"
+  },
+  "tabAnime": {
+    "message": "Anime"
+  },
+  "emptyMovies": {
+    "message": "Aucune sortie de film trouvée pour aujourd'hui."
+  },
+  "emptyTv": {
+    "message": "Aucune sortie de série trouvée pour aujourd'hui."
+  },
+  "emptyAnime": {
+    "message": "Aucune sortie d'anime trouvée pour aujourd'hui."
+  },
+  "footerPoweredBy": {
+    "message": "Propulsé par TMDB et AniList —"
+  },
+  "footerGithubLink": {
+    "message": "GitHub"
+  },
+  "apiKeyErrorStatus": {
+    "message": "Limite d'API atteinte ou clé invalide. Entrez votre clé TMDB personnelle pour continuer."
+  },
+  "apiKeySavedStatus": {
+    "message": "Clé enregistrée ! Rechargement..."
+  },
+  "errorMovies": {
+    "message": "Erreur lors du chargement des films"
+  },
+  "errorTv": {
+    "message": "Erreur lors du chargement des séries"
+  },
+  "errorAnime": {
+    "message": "Erreur lors du chargement des animes"
+  },
+  "detailsLink": {
+    "message": "Détails"
+  },
+  "airedLabel": {
+    "message": "Diffusé"
+  },
+  "episodeLabel": {
+    "message": "Épisode $NUM$",
+    "placeholders": {
+      "num": {
+        "content": "$1"
+      }
+    }
+  },
+  "untitledLabel": {
+    "message": "Sans titre"
+  },
+  "providerAttribution": {
+    "message": "Où regarder — données de JustWatch"
+  },
+  "searchPlaceholder": {
+    "message": "Rechercher dans les sorties de ce jour..."
+  },
+  "emptySearch": {
+    "message": "Aucun titre ne correspond à votre recherche."
+  },
+  "seasonEpisodeLabel": {
+    "message": "S$SEASON$ E$EPISODE$",
+    "placeholders": {
+      "season": {
+        "content": "$1"
+      },
+      "episode": {
+        "content": "$2"
+      }
+    }
+  }
+}

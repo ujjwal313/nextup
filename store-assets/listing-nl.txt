@@ -1,0 +1,48 @@
+Vraag je je af wanneer de volgende grote Marvel-film in jouw land in de bioscoop draait? Of je favoriete anime deze week een nieuwe aflevering heeft? Of wat er gisteren op Netflix verscheen waar iedereen het over heeft? NextUp laat je precies zien wat er op elke datum uitkomt — films, series en anime — in één popup.
+
+De meeste release-trackers laten je heen en weer springen tussen Wikipedia, IMDb, streaming-apps en seizoenskalenders voor anime. NextUp brengt alles samen op één plek, met data van TMDB (The Movie Database) en AniList. Klik op het icoon in de werkbalk, kies een datum en zie wat er uit is. Meer niet.
+
+
+🎬 WAT JE KRIJGT
+
+▸ Drie tabbladen, één popup — Films, Series, Anime. Wissel direct zonder de pagina te verlaten waar je op zit.
+
+▸ Waar je het streamt — elke titel toont de streaming-logo's voor jouw land (Netflix, Prime Video, Crunchyroll en meer). Zo wordt "wat is er uit" ineens "wat kijk ik vanavond". Beschikbaarheidsdata van JustWatch.
+
+▸ Elke datum, beide kanten op — gebruik de pijltjes om naar de releases van gisteren te springen, de premières van morgen, of wat er zes weken geleden uitkwam.
+
+▸ Exacte afleveringen — series tonen precies welke aflevering die dag wordt uitgezonden (S19 E7). Anime-kaarten hebben ook een aftelling en een korte samenvatting.
+
+▸ Zoek in elke dag — typ een titel en filter de releases van die datum direct, inclusief titels in de oorspronkelijke taal.
+
+▸ Wereldwijd of regionaal — bekijk releases van over de hele wereld, of zet de keuzelijst op jouw land (VS, VK, India, Japan, Brazilië en meer — automatisch gedetecteerd).
+
+▸ Alles in één oogopslag — posters, samenvattingen en beoordelingen direct op de kaart. Geen extra klikken, geen nieuwe tabbladen.
+
+
+🎯 VOOR WIE HET IS
+
+▸ Animefans die wekelijkse simulcasts en het seizoen volgen — met AniList zie je dezelfde data waar de community op vertrouwt.
+
+▸ Bingewatchers die willen weten wanneer de volgende aflevering uitkomt — en op welk platform.
+
+▸ Filmliefhebbers die bioscooppremières, streaming-releases en beperkte uitgaven bijhouden.
+
+▸ Iedereen die het zat is om vijf keer per week "wanneer komt ___ uit" te googelen.
+
+
+🔒 PRIVACY & PRESTATIES
+
+NextUp draait volledig in je browser. Geen accounts, geen advertenties, geen analytics, geen dataverzameling. De hele extensie is ongeveer 30 KB en de releases van vandaag worden gecachet, zodat de popup direct opent.
+
+Een gedeelde TMDB API-sleutel werkt meteen. Kom je ooit aan de limiet, dan kun je in de popup je eigen gratis sleutel invoeren.
+
+
+🌍 SPREEKT JOUW TAAL
+
+English, Español, Português (Brasil), Français, Deutsch, Nederlands — met een licht en donker thema dat automatisch je apparaat volgt.
+
+
+━━━━━━━━━━━━━━━━━━━━
+
+Gebouwd en actief onderhouden door één ontwikkelaar. Feedback of een functiewens? Mail naar ujjwalkr80@gmail.com — ik lees ze echt.

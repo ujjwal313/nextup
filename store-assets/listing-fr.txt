@@ -1,0 +1,48 @@
+Vous vous demandez quand le prochain grand film Marvel sort au cinéma dans votre pays ? Si votre anime préféré a un nouvel épisode cette semaine ? Ou ce qui est arrivé hier sur Netflix et dont tout le monde parle ? NextUp vous montre exactement ce qui sort à n'importe quelle date — films, séries et animes — dans un seul popup.
+
+La plupart des trackers de sorties vous obligent à jongler entre Wikipédia, IMDb, les applis de streaming et les calendriers d'anime de la saison. NextUp réunit tout au même endroit, avec les données de TMDB (The Movie Database) et d'AniList. Cliquez sur l'icône de la barre d'outils, choisissez une date, regardez ce qui sort. C'est tout.
+
+
+🎬 CE QUE VOUS OBTENEZ
+
+▸ Trois onglets, un popup — Films, Séries, Animes. Passez de l'un à l'autre instantanément sans quitter la page où vous êtes.
+
+▸ Où le regarder — chaque titre affiche les logos des services de streaming disponibles dans votre pays (Netflix, Prime Video, Crunchyroll et plus), pour transformer « qu'est-ce qui sort » en « qu'est-ce que je regarde ce soir ». Données de disponibilité par JustWatch.
+
+▸ N'importe quelle date, dans les deux sens — utilisez les flèches pour voir les sorties d'hier, les premières de demain ou ce qui est sorti il y a six semaines.
+
+▸ Épisodes exacts — les séries indiquent précisément quel épisode est diffusé ce jour-là (S19 E7). Les animes ajoutent un compte à rebours et un synopsis.
+
+▸ Recherchez dans la journée — tapez un titre et filtrez instantanément les sorties de cette date, titres en langue originale inclus.
+
+▸ Mondial ou régional — voyez les sorties du monde entier, ou basculez le sélecteur sur votre pays (États-Unis, Royaume-Uni, Inde, Japon, Brésil et plus — détecté automatiquement).
+
+▸ Tout d'un coup d'œil — affiches, synopsis et notes directement sur la carte. Pas de clics superflus, pas de nouveaux onglets.
+
+
+🎯 POUR QUI C'EST
+
+▸ Les fans d'anime qui suivent les simulcasts hebdomadaires et la saison — avec AniList, vous voyez les mêmes données que celles auxquelles la communauté fait confiance.
+
+▸ Les adeptes du binge-watching qui veulent savoir quand sort le prochain épisode — et sur quelle plateforme.
+
+▸ Les cinéphiles qui suivent les sorties en salle, les premières en streaming et les sorties limitées.
+
+▸ Tous ceux qui en ont assez de googler « quand sort ___ » cinq fois par semaine.
+
+
+🔒 CONFIDENTIALITÉ ET PERFORMANCES
+
+NextUp fonctionne entièrement dans votre navigateur. Pas de compte, pas de pub, pas d'analytics, aucune collecte de données. L'extension entière pèse environ 30 Ko, et les sorties du jour sont mises en cache pour que le popup s'affiche instantanément.
+
+Une clé partagée de l'API TMDB fonctionne d'emblée. Si vous atteignez un jour la limite, le popup vous permet d'utiliser votre propre clé gratuite.
+
+
+🌍 PARLE VOTRE LANGUE
+
+English, Español, Português (Brasil), Français, Deutsch, Nederlands — avec des thèmes clair et sombre qui suivent automatiquement votre appareil.
+
+
+━━━━━━━━━━━━━━━━━━━━
+
+Créée et activement maintenue par un développeur indépendant. Un retour, une idée de fonctionnalité ? Écrivez à ujjwalkr80@gmail.com — je les lis vraiment.

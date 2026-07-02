@@ -1,0 +1,48 @@
+Du fragst dich, wann der nächste große Marvel-Film bei dir im Kino startet? Ob dein Lieblingsanime diese Woche eine neue Folge hat? Oder was gestern auf Netflix erschienen ist, worüber alle reden? NextUp zeigt dir genau, was an einem beliebigen Datum erscheint — Filme, Serien und Anime — in einem einzigen Popup.
+
+Die meisten Release-Tracker zwingen dich, zwischen Wikipedia, IMDb, Streaming-Apps und saisonalen Anime-Kalendern hin- und herzuspringen. NextUp bündelt alles an einem Ort, mit Daten von TMDB (The Movie Database) und AniList. Auf das Symbol in der Symbolleiste klicken, Datum wählen, sehen, was draußen ist. Das war's.
+
+
+🎬 WAS DU BEKOMMST
+
+▸ Drei Tabs, ein Popup — Filme, Serien, Anime. Wechsle sofort, ohne die Seite zu verlassen, auf der du bist.
+
+▸ Wo es streamt — jeder Titel zeigt die Streaming-Logos für dein Land (Netflix, Prime Video, Crunchyroll und mehr). Aus „was ist neu" wird „was schaue ich heute Abend". Verfügbarkeitsdaten von JustWatch.
+
+▸ Jedes Datum, in beide Richtungen — spring mit den Pfeilen zu den Releases von gestern, den Premieren von morgen oder dem, was vor sechs Wochen erschienen ist.
+
+▸ Exakte Episoden — Serien zeigen genau, welche Folge an dem Tag läuft (S19 E7). Anime-Karten haben zusätzlich Countdown und Kurzbeschreibung.
+
+▸ Jeden Tag durchsuchen — tippe einen Titel und filtere die Releases dieses Datums sofort, Originaltitel inklusive.
+
+▸ Global oder regional — sieh weltweite Releases oder stell das Dropdown auf dein Land um (USA, UK, Indien, Japan, Brasilien und mehr — automatisch erkannt).
+
+▸ Alles auf einen Blick — Poster, Beschreibungen und Bewertungen direkt auf der Karte. Keine Extra-Klicks, keine neuen Tabs.
+
+
+🎯 FÜR WEN ES IST
+
+▸ Anime-Fans, die wöchentliche Simulcasts und die Saison verfolgen — mit AniList siehst du dieselben Daten, denen die Community vertraut.
+
+▸ Serien-Bingewatcher, die wissen wollen, wann die nächste Folge kommt — und auf welcher Plattform.
+
+▸ Filmfans, die Kinostarts, Streaming-Premieren und limitierte Releases im Blick behalten.
+
+▸ Alle, die es satthaben, fünfmal pro Woche „wann kommt ___ raus" zu googeln.
+
+
+🔒 DATENSCHUTZ & PERFORMANCE
+
+NextUp läuft komplett in deinem Browser. Keine Konten, keine Werbung, keine Analytics, keine Datensammlung. Die ganze Erweiterung ist rund 30 KB groß, und die heutigen Releases werden zwischengespeichert, damit sich das Popup sofort öffnet.
+
+Ein gemeinsamer TMDB-API-Schlüssel funktioniert von Anfang an. Falls du je ans Limit stößt, kannst du direkt im Popup deinen eigenen kostenlosen Schlüssel eintragen.
+
+
+🌍 SPRICHT DEINE SPRACHE
+
+English, Español, Português (Brasil), Français, Deutsch, Nederlands — mit hellem und dunklem Design, das automatisch deinem Gerät folgt.
+
+
+━━━━━━━━━━━━━━━━━━━━
+
+Entwickelt und aktiv gepflegt von einem Solo-Entwickler. Feedback oder ein Feature-Wunsch? Schreib an ujjwalkr80@gmail.com — ich lese wirklich alles.

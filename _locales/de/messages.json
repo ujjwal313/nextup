@@ -1,0 +1,102 @@
+{
+  "extName": {
+    "message": "NextUp – Release-Kalender für Filme, Serien & Anime"
+  },
+  "extDescription": {
+    "message": "Release-Kalender für Filme, Serien & Anime. Datum wählen und sehen, was erscheint und wo es streamt. Mit TMDB & AniList."
+  },
+  "popupTitle": {
+    "message": "NextUp – Heutige Veröffentlichungen"
+  },
+  "regionGlobal": {
+    "message": "Global"
+  },
+  "regionLocal": {
+    "message": "Regional"
+  },
+  "apiKeyLabel": {
+    "message": "Gib deinen TMDB-API-Schlüssel ein"
+  },
+  "apiKeyPlaceholder": {
+    "message": "TMDB-Schlüssel hier einfügen..."
+  },
+  "apiKeySaveBtn": {
+    "message": "Schlüssel speichern"
+  },
+  "tabMovies": {
+    "message": "Filme"
+  },
+  "tabTv": {
+    "message": "Serien"
+  },
+  "tabAnime": {
+    "message": "Anime"
+  },
+  "emptyMovies": {
+    "message": "Keine Filmveröffentlichungen für heute gefunden."
+  },
+  "emptyTv": {
+    "message": "Keine Serienveröffentlichungen für heute gefunden."
+  },
+  "emptyAnime": {
+    "message": "Keine Anime-Veröffentlichungen für heute gefunden."
+  },
+  "footerPoweredBy": {
+    "message": "Bereitgestellt von TMDB & AniList —"
+  },
+  "footerGithubLink": {
+    "message": "GitHub"
+  },
+  "apiKeyErrorStatus": {
+    "message": "API-Limit erreicht oder ungültiger Schlüssel. Gib deinen persönlichen TMDB-Schlüssel ein, um fortzufahren."
+  },
+  "apiKeySavedStatus": {
+    "message": "Schlüssel gespeichert! Wird neu geladen..."
+  },
+  "errorMovies": {
+    "message": "Fehler beim Laden der Filme"
+  },
+  "errorTv": {
+    "message": "Fehler beim Laden der Serien"
+  },
+  "errorAnime": {
+    "message": "Fehler beim Laden der Anime"
+  },
+  "detailsLink": {
+    "message": "Details"
+  },
+  "airedLabel": {
+    "message": "Ausgestrahlt"
+  },
+  "episodeLabel": {
+    "message": "Episode $NUM$",
+    "placeholders": {
+      "num": {
+        "content": "$1"
+      }
+    }
+  },
+  "untitledLabel": {
+    "message": "Ohne Titel"
+  },
+  "providerAttribution": {
+    "message": "Wo ansehen — Daten von JustWatch"
+  },
+  "searchPlaceholder": {
+    "message": "Veröffentlichungen dieses Tages durchsuchen..."
+  },
+  "emptySearch": {
+    "message": "Keine Titel entsprechen deiner Suche."
+  },
+  "seasonEpisodeLabel": {
+    "message": "S$SEASON$ E$EPISODE$",
+    "placeholders": {
+      "season": {
+        "content": "$1"
+      },
+      "episode": {
+        "content": "$2"
+      }
+    }
+  }
+}

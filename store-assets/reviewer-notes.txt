@@ -1,0 +1,13 @@
+NextUp is a popup-only extension (no background scripts, no content scripts) that shows movie/TV/anime releases for a chosen date. The submitted ZIP is the complete source — plain JavaScript, no build step, no minification, no remote code.
+
+ABOUT THE API KEY IN popup.js:
+The TMDB API key visible in the source (SHARED_TMDB_KEY) is intentional. It is a free-tier key for TMDB's public API, which is designed for client-side use (keys are passed as URL parameters by design and are not secrets). Shipping a shared key lets the extension work out of the box without requiring users to create a TMDB account. If the shared key is rate-limited, the popup shows a field where users can enter their own free key, stored in storage.sync.
+
+HOST PERMISSIONS (all three are also CORS-enabled, used only from the popup):
+• api.themoviedb.org — movie & TV release data, watch-provider info
+• graphql.anilist.co — anime airing schedules
+• ipwho.is — a single request to detect the user's country code for the optional "Regional" filter and watch-provider region. The result (e.g. "IN") is cached in storage.local for 24 hours. No other data from this response is read or stored, and nothing is ever transmitted anywhere.
+
+DATA COLLECTION: none — no accounts, no analytics, no telemetry, declared via data_collection_permissions: ["none"]. All storage is local/sync extension storage (region preference, optional user API key, cached country code, and a cached copy of today's releases for instant popup rendering).
+
+HOW TO TEST: click the toolbar icon → three tabs (Movies / TV / Anime) load today's releases. Use the ‹ › arrows to change the date, the search box to filter that day's titles, and the Global/Regional dropdown to switch region scope. Streaming-provider logos load lazily as cards scroll into view.

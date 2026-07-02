@@ -1,3 +1,75 @@
+/* ================= THEME TOKENS =================
+   Dark is the default; light overrides below follow the device setting.
+   All text/background pairs in both palettes meet WCAG AA (4.5:1). */
+
+:root {
+  color-scheme: dark;
+
+  --bg: #0f172a;
+  --bg-deep: #020617; /* tabs track, poster placeholder */
+  --surface: #1e293b; /* selects, inputs, panels */
+  --surface-hover: #334155;
+  --border: #334155;
+  --border-strong: #475569;
+
+  --card-bg: rgba(30, 41, 59, 0.31);
+  --card-bg-hover: rgba(30, 41, 59, 0.5);
+  --card-border: #1e293b;
+  --card-border-hover: #334155;
+
+  --text: #f9fafb;
+  --text-title: #f1f5f9;
+  --text-secondary: #e2e8f0;
+  --text-subtitle: #cbd5e1;
+  --text-muted: #94a3b8;
+
+  --accent: #3b82f6; /* links, focus, spinner */
+  --accent-strong: #2563eb; /* active tab */
+  --accent-soft: #60a5fa; /* timer, link hover */
+  --success: #22c55e;
+  --success-text: #022c22;
+
+  --spinner-track: #1e293b;
+  --scrollbar: #334155;
+  --scrollbar-hover: #475569;
+  --shadow: rgba(0, 0, 0, 0.2);
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color-scheme: light;
+
+    --bg: #f8fafc;
+    --bg-deep: #e2e8f0;
+    --surface: #ffffff;
+    --surface-hover: #e2e8f0;
+    --border: #cbd5e1;
+    --border-strong: #94a3b8;
+
+    --card-bg: #ffffff;
+    --card-bg-hover: #f1f5f9;
+    --card-border: #e2e8f0;
+    --card-border-hover: #cbd5e1;
+
+    --text: #0f172a;
+    --text-title: #0f172a;
+    --text-secondary: #1e293b;
+    --text-subtitle: #334155;
+    --text-muted: #475569;
+
+    --accent: #2563eb;
+    --accent-strong: #2563eb;
+    --accent-soft: #1d4ed8;
+    --success: #22c55e;
+    --success-text: #022c22;
+
+    --spinner-track: #cbd5e1;
+    --scrollbar: #cbd5e1;
+    --scrollbar-hover: #94a3b8;
+    --shadow: rgba(15, 23, 42, 0.08);
+  }
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -9,8 +81,8 @@
 body {
   width: 380px;
   height: 520px; /* FIXED HEIGHT - Prevents all layout shifts */
-  background: #0f172a;
-  color: #f9fafb;
+  background: var(--bg);
+  color: var(--text);
   padding: 12px 16px;
   display: flex;
   flex-direction: column; /* Stacks Header -> Content -> Footer */
@@ -58,21 +130,21 @@ h1 {
 
 /* Region Selector */
 .header-select {
-  background: #1e293b;
-  color: #94a3b8;
-  border: 1px solid #334155;
+  background: var(--surface);
+  color: var(--text-muted);
+  border: 1px solid var(--border);
   border-radius: 6px;
   padding: 4px 8px;
   font-size: 11px;
   cursor: pointer;
   outline: none;
-  transition: all 0.2s ease;
+  transition: background 0.2s ease, color 0.2s ease, border-color 0.2s ease;
 }
 
 .header-select:hover {
-  background: #334155;
-  color: #f1f5f9;
-  border-color: #475569;
+  background: var(--surface-hover);
+  color: var(--text-title);
+  border-color: var(--border-strong);
 }
 
 /* ================= DATE ================= */
@@ -80,7 +152,7 @@ h1 {
 #dateLabel {
   font-size: 12px;
   font-weight: 500;
-  color: #e2e8f0;
+  color: var(--text-secondary);
   min-width: 95px;
   text-align: center;
 }
@@ -89,16 +161,16 @@ h1 {
   display: flex;
   align-items: center;
   gap: 4px;
-  background: #1e293b;
+  background: var(--surface);
   padding: 2px;
   border-radius: 8px;
-  border: 1px solid #334155;
+  border: 1px solid var(--border);
 }
 
 .day-btn {
   background: transparent;
   border: none;
-  color: #94a3b8;
+  color: var(--text-muted);
   width: 20px;
   height: 20px;
   font-size: 10px;
@@ -107,20 +179,20 @@ h1 {
   display: flex;
   align-items: center;
   justify-content: center;
-  transition: all 0.2s ease;
+  transition: background 0.2s ease, color 0.2s ease;
 }
 
 .day-btn:hover {
-  background: #334155;
-  color: #fff;
+  background: var(--surface-hover);
+  color: var(--text-title);
 }
 
 /* ================= API KEY SECTION ================= */
 
 .apiKeySection {
   flex-shrink: 0;
-  background: #1e293b;
-  border: 1px solid #334155;
+  background: var(--surface);
+  border: 1px solid var(--border);
   padding: 12px;
   border-radius: 8px;
   margin-bottom: 12px;
@@ -132,7 +204,7 @@ h1 {
 
 .apiKeySection label {
   font-size: 12px;
-  color: #e2e8f0;
+  color: var(--text-secondary);
   display: flex;
   flex-direction: column;
   gap: 6px;
@@ -142,20 +214,20 @@ h1 {
   font-size: 12px;
   padding: 8px;
   border-radius: 6px;
-  border: 1px solid #475569;
-  background: #0f172a;
-  color: #e5e7eb;
+  border: 1px solid var(--border-strong);
+  background: var(--bg);
+  color: var(--text-secondary);
   outline: none;
   transition: border-color 0.2s;
 }
 
 #tmdbApiKeyInput:focus {
-  border-color: #3b82f6;
+  border-color: var(--accent);
 }
 
 #saveApiKeyBtn {
-  background: #22c55e;
-  color: #022c22;
+  background: var(--success);
+  color: var(--success-text);
   border: none;
   border-radius: 6px;
   padding: 8px;
@@ -175,10 +247,10 @@ h1 {
   display: flex;
   gap: 8px;
   margin-bottom: 12px;
-  background: #020617;
+  background: var(--bg-deep);
   padding: 4px;
   border-radius: 99px;
-  border: 1px solid #1e293b;
+  border: 1px solid var(--card-border);
   flex-shrink: 0;
 }
 
@@ -191,18 +263,44 @@ h1 {
   cursor: pointer;
   border: none;
   background: transparent;
-  color: #64748b;
-  transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+  color: var(--text-muted);
+  transition: background 0.25s cubic-bezier(0.4, 0, 0.2, 1),
+    color 0.25s cubic-bezier(0.4, 0, 0.2, 1),
+    box-shadow 0.25s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 #tabs button:hover {
-  color: #94a3b8;
+  color: var(--text-subtitle);
 }
 
 #tabs button.active {
-  background: #2563eb;
+  background: var(--accent-strong);
   color: #ffffff;
   box-shadow: 0 2px 10px rgba(37, 99, 235, 0.3);
+}
+
+/* ================= SEARCH ================= */
+
+#searchInput {
+  flex-shrink: 0;
+  width: 100%;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  color: var(--text-secondary);
+  border-radius: 8px;
+  padding: 7px 10px;
+  font-size: 12px;
+  margin-bottom: 12px;
+  outline: none;
+  transition: border-color 0.2s ease;
+}
+
+#searchInput:focus {
+  border-color: var(--accent);
+}
+
+#searchInput::placeholder {
+  color: var(--text-muted);
 }
 
 /* ================= MAIN CONTENT (Flexible) ================= */
@@ -243,6 +341,9 @@ h1 {
   padding-right: 6px;
   scroll-behavior: smooth;
   padding-bottom: 10px; /* Extra space at bottom */
+  /* Firefox — it ignores the ::-webkit-scrollbar rules below */
+  scrollbar-width: thin;
+  scrollbar-color: var(--scrollbar) transparent;
 }
 
 /* Scrollbar Styling */
@@ -255,12 +356,12 @@ h1 {
 }
 
 .list::-webkit-scrollbar-thumb {
-  background: #334155;
+  background: var(--scrollbar);
   border-radius: 10px;
 }
 
 .list::-webkit-scrollbar-thumb:hover {
-  background: #475569;
+  background: var(--scrollbar-hover);
 }
 
 /* ================= LOADER & EMPTY STATES ================= */
@@ -274,15 +375,15 @@ h1 {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  background: #0f172a; /* Covers the list if loading */
+  background: var(--bg); /* Covers the list if loading */
   z-index: 10;
 }
 
 .loader-icon {
   width: 28px;
   height: 28px;
-  border: 3px solid #1e293b;
-  border-top-color: #3b82f6;
+  border: 3px solid var(--spinner-track);
+  border-top-color: var(--accent);
   border-radius: 50%;
   animation: spin 0.8s linear infinite;
 }
@@ -296,7 +397,7 @@ h1 {
 .empty {
   text-align: center;
   font-size: 13px;
-  color: #64748b;
+  color: var(--text-muted);
   background: transparent;
   pointer-events: none;
 }
@@ -317,18 +418,19 @@ h1 {
 .card {
   display: flex;
   gap: 12px;
-  background: #1e293b50;
-  border: 1px solid #1e293b;
+  background: var(--card-bg);
+  border: 1px solid var(--card-border);
   padding: 10px;
   border-radius: 12px;
   margin-bottom: 10px;
-  transition: transform 0.2s ease, border-color 0.2s ease;
+  transition: transform 0.2s ease, border-color 0.2s ease,
+    background 0.2s ease;
   animation: slideUpFade 0.4s cubic-bezier(0.16, 1, 0.3, 1) forwards;
 }
 
 .card:hover {
-  background: #1e293b80;
-  border-color: #334155;
+  background: var(--card-bg-hover);
+  border-color: var(--card-border-hover);
   transform: translateY(-1px);
 }
 
@@ -338,8 +440,8 @@ h1 {
   border-radius: 8px;
   object-fit: cover;
   flex-shrink: 0;
-  background: #0f172a;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  background: var(--bg-deep);
+  box-shadow: 0 2px 5px var(--shadow);
 }
 
 .details {
@@ -353,15 +455,29 @@ h1 {
 .title {
   font-size: 14px;
   font-weight: 600;
-  color: #f1f5f9;
+  color: var(--text-title);
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
 }
 
+.subtitle {
+  font-size: 11px;
+  font-weight: 500;
+  color: var(--text-subtitle);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+/* TV subtitles fill in lazily — don't reserve space while empty */
+.subtitle:empty {
+  display: none;
+}
+
 .overview {
   font-size: 11px;
-  color: #94a3b8;
+  color: var(--text-muted);
   line-height: 1.4;
   display: -webkit-box;
   -webkit-line-clamp: 2;
@@ -373,15 +489,72 @@ h1 {
 .timer {
   font-size: 11px;
   font-weight: 600;
-  color: #60a5fa;
+  color: var(--accent-soft);
   display: flex;
   align-items: center;
   gap: 6px;
 }
 
+/* ================= CARD ACTIONS (Details + providers) ================= */
+
+.card-actions {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+  margin-top: 4px;
+}
+
+.card-actions > a {
+  margin-top: 0;
+  flex-shrink: 0;
+}
+
+/* ================= STREAMING PROVIDERS ================= */
+
+.providers {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  min-width: 0;
+  overflow: hidden;
+}
+
+.providers:empty {
+  display: none;
+}
+
+.providers a {
+  margin-top: 0;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  flex-shrink: 0;
+}
+
+.providers img {
+  width: 18px;
+  height: 18px;
+  border-radius: 4px;
+  /* contain, not cover — AniList icons aren't always square and cover zoom-crops them */
+  object-fit: contain;
+  display: block;
+  flex-shrink: 0;
+}
+
+/* White AniList glyphs sit on their service's brand color (inline style) */
+.provider-chip {
+  padding: 3px;
+}
+
+.provider-text {
+  font-size: 10px;
+  color: var(--text-muted);
+}
+
 a {
   font-size: 11px;
-  color: #3b82f6;
+  color: var(--accent);
   text-decoration: none;
   font-weight: 500;
   margin-top: 4px;
@@ -390,7 +563,7 @@ a {
 }
 
 a:hover {
-  color: #60a5fa;
+  color: var(--accent-soft);
   text-decoration: underline;
 }
 
@@ -400,14 +573,14 @@ footer {
   margin-top: 10px;
   font-size: 12px;
   text-align: center;
-  color: #475569;
+  color: var(--text-muted);
   flex-shrink: 0; /* Prevents footer compression */
 }
 
 footer a {
-  color: #64748b;
+  color: var(--text-subtitle);
 }
 
 footer a:hover {
-  color: #94a3b8;
+  color: var(--text-secondary);
 }

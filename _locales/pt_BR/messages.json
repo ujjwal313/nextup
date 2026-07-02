@@ -1,0 +1,102 @@
+{
+  "extName": {
+    "message": "NextUp – Calendário de lançamentos: filmes, séries e animes"
+  },
+  "extDescription": {
+    "message": "Calendário de lançamentos de filmes, séries e animes. Escolha uma data e veja o que estreia e onde assistir. Com TMDB e AniList."
+  },
+  "popupTitle": {
+    "message": "NextUp – Lançamentos de Hoje"
+  },
+  "regionGlobal": {
+    "message": "Global"
+  },
+  "regionLocal": {
+    "message": "Regional"
+  },
+  "apiKeyLabel": {
+    "message": "Insira sua chave de API do TMDB"
+  },
+  "apiKeyPlaceholder": {
+    "message": "Cole sua chave do TMDB aqui..."
+  },
+  "apiKeySaveBtn": {
+    "message": "Salvar chave"
+  },
+  "tabMovies": {
+    "message": "Filmes"
+  },
+  "tabTv": {
+    "message": "Séries"
+  },
+  "tabAnime": {
+    "message": "Animes"
+  },
+  "emptyMovies": {
+    "message": "Nenhum lançamento de filme encontrado para hoje."
+  },
+  "emptyTv": {
+    "message": "Nenhum lançamento de série encontrado para hoje."
+  },
+  "emptyAnime": {
+    "message": "Nenhum lançamento de anime encontrado para hoje."
+  },
+  "footerPoweredBy": {
+    "message": "Desenvolvido com TMDB e AniList —"
+  },
+  "footerGithubLink": {
+    "message": "GitHub"
+  },
+  "apiKeyErrorStatus": {
+    "message": "Limite de API atingido ou chave inválida. Insira sua chave pessoal do TMDB para continuar."
+  },
+  "apiKeySavedStatus": {
+    "message": "Chave salva! Recarregando..."
+  },
+  "errorMovies": {
+    "message": "Erro ao carregar filmes"
+  },
+  "errorTv": {
+    "message": "Erro ao carregar séries"
+  },
+  "errorAnime": {
+    "message": "Erro ao carregar animes"
+  },
+  "detailsLink": {
+    "message": "Detalhes"
+  },
+  "airedLabel": {
+    "message": "Exibido"
+  },
+  "episodeLabel": {
+    "message": "Episódio $NUM$",
+    "placeholders": {
+      "num": {
+        "content": "$1"
+      }
+    }
+  },
+  "untitledLabel": {
+    "message": "Sem título"
+  },
+  "providerAttribution": {
+    "message": "Onde assistir — dados da JustWatch"
+  },
+  "searchPlaceholder": {
+    "message": "Buscar nos lançamentos deste dia..."
+  },
+  "emptySearch": {
+    "message": "Nenhum título corresponde à sua busca."
+  },
+  "seasonEpisodeLabel": {
+    "message": "T$SEASON$ E$EPISODE$",
+    "placeholders": {
+      "season": {
+        "content": "$1"
+      },
+      "episode": {
+        "content": "$2"
+      }
+    }
+  }
+}

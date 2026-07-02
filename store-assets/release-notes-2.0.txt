@@ -1,0 +1,11 @@
+Version 2.0 — the biggest update yet:
+
+• Where to stream it — every movie, show, and anime now displays streaming service logos for your country (data by JustWatch), with direct Crunchyroll/Netflix links on anime
+• Exact episode info — TV cards show which episode airs that day (S19 E7); anime cards add airing countdowns and synopses
+• Search any day — filter the selected date's releases as you type, original-language titles included
+• Now in 6 languages — English, Español, Português (Brasil), Français, Deutsch, Nederlands
+• Light & dark themes that follow your system setting, with accessible contrast in both
+• Much faster — the popup paints instantly from cache while fresh data loads, uses fewer network requests, and weighs about 30 KB
+• Fixed: dates now resolve in your local timezone (evening browsing no longer showed the previous day's releases in some regions)
+
+As always: no accounts, no analytics, no data collection — release data comes from TMDB and AniList, and nothing leaves your browser.
