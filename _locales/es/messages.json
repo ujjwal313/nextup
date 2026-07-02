@@ -1,0 +1,102 @@
+{
+  "extName": {
+    "message": "NextUp – Calendario de estrenos: cine, series y anime"
+  },
+  "extDescription": {
+    "message": "Calendario de estrenos de cine, series y anime. Elige una fecha y mira qué se estrena y dónde verlo. Con TMDB y AniList."
+  },
+  "popupTitle": {
+    "message": "NextUp – Estrenos de Hoy"
+  },
+  "regionGlobal": {
+    "message": "Global"
+  },
+  "regionLocal": {
+    "message": "Regional"
+  },
+  "apiKeyLabel": {
+    "message": "Introduce tu clave de API de TMDB"
+  },
+  "apiKeyPlaceholder": {
+    "message": "Pega aquí tu clave de TMDB..."
+  },
+  "apiKeySaveBtn": {
+    "message": "Guardar clave"
+  },
+  "tabMovies": {
+    "message": "Películas"
+  },
+  "tabTv": {
+    "message": "Series"
+  },
+  "tabAnime": {
+    "message": "Anime"
+  },
+  "emptyMovies": {
+    "message": "No se encontraron estrenos de películas para hoy."
+  },
+  "emptyTv": {
+    "message": "No se encontraron estrenos de series para hoy."
+  },
+  "emptyAnime": {
+    "message": "No se encontraron estrenos de anime para hoy."
+  },
+  "footerPoweredBy": {
+    "message": "Con la tecnología de TMDB y AniList —"
+  },
+  "footerGithubLink": {
+    "message": "GitHub"
+  },
+  "apiKeyErrorStatus": {
+    "message": "Límite de API alcanzado o clave inválida. Introduce tu clave personal de TMDB para continuar."
+  },
+  "apiKeySavedStatus": {
+    "message": "¡Clave guardada! Recargando..."
+  },
+  "errorMovies": {
+    "message": "Error al cargar películas"
+  },
+  "errorTv": {
+    "message": "Error al cargar series"
+  },
+  "errorAnime": {
+    "message": "Error al cargar anime"
+  },
+  "detailsLink": {
+    "message": "Detalles"
+  },
+  "airedLabel": {
+    "message": "Emitido"
+  },
+  "episodeLabel": {
+    "message": "Episodio $NUM$",
+    "placeholders": {
+      "num": {
+        "content": "$1"
+      }
+    }
+  },
+  "untitledLabel": {
+    "message": "Sin título"
+  },
+  "providerAttribution": {
+    "message": "Dónde ver — datos de JustWatch"
+  },
+  "searchPlaceholder": {
+    "message": "Buscar en los estrenos de este día..."
+  },
+  "emptySearch": {
+    "message": "Ningún título coincide con tu búsqueda."
+  },
+  "seasonEpisodeLabel": {
+    "message": "T$SEASON$ E$EPISODE$",
+    "placeholders": {
+      "season": {
+        "content": "$1"
+      },
+      "episode": {
+        "content": "$2"
+      }
+    }
+  }
+}

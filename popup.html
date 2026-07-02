@@ -2,7 +2,10 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <title>NextUp – Today’s Releases</title>
+    <title data-i18n="popupTitle">NextUp – Today's Releases</title>
+    <link rel="preconnect" href="https://api.themoviedb.org" />
+    <link rel="preconnect" href="https://image.tmdb.org" />
+    <link rel="preconnect" href="https://graphql.anilist.co" />
     <link rel="stylesheet" href="popup.css" />
     <link rel="icon" type="image/png" href="assets/icon-32.png" />
   </head>
@@ -16,8 +19,8 @@
 
       <div id="controls">
         <select id="regionSelector" class="header-select">
-          <option value="GLOBAL">Global</option>
-          <option value="LOCAL">Regional</option>
+          <option value="GLOBAL" data-i18n="regionGlobal">Global</option>
+          <option value="LOCAL" data-i18n="regionLocal">Regional</option>
         </select>
 
         <div class="date-controls">
@@ -30,18 +33,31 @@
 
     <section id="apiKeySection" class="apiKeySection hidden">
       <label>
-        Enter your TMDB API Key
-        <input id="tmdbApiKeyInput" placeholder="Paste TMDB key here..." />
+        <span data-i18n="apiKeyLabel">Enter your TMDB API Key</span>
+        <input
+          id="tmdbApiKeyInput"
+          data-i18n-placeholder="apiKeyPlaceholder"
+          placeholder="Paste TMDB key here..."
+        />
       </label>
-      <button id="saveApiKeyBtn">Save Key</button>
+      <button id="saveApiKeyBtn" data-i18n="apiKeySaveBtn">Save Key</button>
       <small id="apiKeyStatus"></small>
     </section>
 
     <nav id="tabs">
-      <button data-tab="movies" class="active">Movies</button>
-      <button data-tab="tv">TV Shows</button>
-      <button data-tab="anime">Anime</button>
+      <button data-tab="movies" class="active" data-i18n="tabMovies">Movies</button>
+      <button data-tab="tv" data-i18n="tabTv">TV Shows</button>
+      <button data-tab="anime" data-i18n="tabAnime">Anime</button>
     </nav>
+
+    <input
+      id="searchInput"
+      type="search"
+      data-i18n-placeholder="searchPlaceholder"
+      placeholder="Search this day's releases..."
+      autocomplete="off"
+      spellcheck="false"
+    />
 
     <main id="content">
       <div id="movies" class="tab-panel active">
@@ -49,7 +65,7 @@
           <div class="loader-icon"></div>
         </div>
         <div class="list" id="moviesList"></div>
-        <div class="empty hidden" id="moviesEmpty">
+        <div class="empty hidden" id="moviesEmpty" data-i18n="emptyMovies">
           No movie releases found for today.
         </div>
       </div>
@@ -59,7 +75,7 @@
           <div class="loader-icon"></div>
         </div>
         <div class="list" id="tvList"></div>
-        <div class="empty hidden" id="tvEmpty">
+        <div class="empty hidden" id="tvEmpty" data-i18n="emptyTv">
           No TV releases found for today.
         </div>
       </div>
@@ -69,7 +85,7 @@
           <div class="loader-icon"></div>
         </div>
         <div class="list" id="animeList"></div>
-        <div class="empty hidden" id="animeEmpty">
+        <div class="empty hidden" id="animeEmpty" data-i18n="emptyAnime">
           No anime releases found for today.
         </div>
       </div>
@@ -77,8 +93,13 @@
 
     <footer>
       <small>
-        Powered by TMDB & AniList —
-        <a href="https://github.com/ujjwal313" target="_blank">GitHub</a>
+        <span data-i18n="footerPoweredBy">Powered by TMDB & AniList —</span>
+        <a
+          href="https://github.com/ujjwal313"
+          target="_blank"
+          data-i18n="footerGithubLink"
+          >GitHub</a
+        >
       </small>
     </footer>
 

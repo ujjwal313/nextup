@@ -1,0 +1,102 @@
+{
+  "extName": {
+    "message": "NextUp – Movie, TV & Anime Release Calendar"
+  },
+  "extDescription": {
+    "message": "Movie, TV & anime release calendar. Pick any date, see what's dropping & where to stream it. Powered by TMDB & AniList."
+  },
+  "popupTitle": {
+    "message": "NextUp – Today's Releases"
+  },
+  "regionGlobal": {
+    "message": "Global"
+  },
+  "regionLocal": {
+    "message": "Regional"
+  },
+  "apiKeyLabel": {
+    "message": "Enter your TMDB API Key"
+  },
+  "apiKeyPlaceholder": {
+    "message": "Paste TMDB key here..."
+  },
+  "apiKeySaveBtn": {
+    "message": "Save Key"
+  },
+  "tabMovies": {
+    "message": "Movies"
+  },
+  "tabTv": {
+    "message": "TV Shows"
+  },
+  "tabAnime": {
+    "message": "Anime"
+  },
+  "emptyMovies": {
+    "message": "No movie releases found for today."
+  },
+  "emptyTv": {
+    "message": "No TV releases found for today."
+  },
+  "emptyAnime": {
+    "message": "No anime releases found for today."
+  },
+  "footerPoweredBy": {
+    "message": "Powered by TMDB & AniList —"
+  },
+  "footerGithubLink": {
+    "message": "GitHub"
+  },
+  "apiKeyErrorStatus": {
+    "message": "API limit reached or invalid key. Enter personal TMDB key to continue."
+  },
+  "apiKeySavedStatus": {
+    "message": "Key saved! Reloading..."
+  },
+  "errorMovies": {
+    "message": "Error loading movies"
+  },
+  "errorTv": {
+    "message": "Error loading TV shows"
+  },
+  "errorAnime": {
+    "message": "Error loading anime"
+  },
+  "detailsLink": {
+    "message": "Details"
+  },
+  "airedLabel": {
+    "message": "Aired"
+  },
+  "episodeLabel": {
+    "message": "Episode $NUM$",
+    "placeholders": {
+      "num": {
+        "content": "$1"
+      }
+    }
+  },
+  "untitledLabel": {
+    "message": "Untitled"
+  },
+  "providerAttribution": {
+    "message": "Where to watch — data by JustWatch"
+  },
+  "searchPlaceholder": {
+    "message": "Search this day's releases..."
+  },
+  "emptySearch": {
+    "message": "No titles match your search."
+  },
+  "seasonEpisodeLabel": {
+    "message": "S$SEASON$ E$EPISODE$",
+    "placeholders": {
+      "season": {
+        "content": "$1"
+      },
+      "episode": {
+        "content": "$2"
+      }
+    }
+  }
+}

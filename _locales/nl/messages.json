@@ -1,0 +1,102 @@
+{
+  "extName": {
+    "message": "NextUp – Releasekalender voor films, series & anime"
+  },
+  "extDescription": {
+    "message": "Releasekalender voor films, series en anime. Kies een datum, zie wat er uitkomt en waar je het kunt streamen. Met TMDB & AniList."
+  },
+  "popupTitle": {
+    "message": "NextUp – Releases van vandaag"
+  },
+  "regionGlobal": {
+    "message": "Wereldwijd"
+  },
+  "regionLocal": {
+    "message": "Regionaal"
+  },
+  "apiKeyLabel": {
+    "message": "Voer je TMDB API-sleutel in"
+  },
+  "apiKeyPlaceholder": {
+    "message": "Plak hier je TMDB-sleutel..."
+  },
+  "apiKeySaveBtn": {
+    "message": "Sleutel opslaan"
+  },
+  "tabMovies": {
+    "message": "Films"
+  },
+  "tabTv": {
+    "message": "Series"
+  },
+  "tabAnime": {
+    "message": "Anime"
+  },
+  "emptyMovies": {
+    "message": "Geen filmreleases gevonden voor vandaag."
+  },
+  "emptyTv": {
+    "message": "Geen seriereleases gevonden voor vandaag."
+  },
+  "emptyAnime": {
+    "message": "Geen anime-releases gevonden voor vandaag."
+  },
+  "footerPoweredBy": {
+    "message": "Mogelijk gemaakt door TMDB & AniList —"
+  },
+  "footerGithubLink": {
+    "message": "GitHub"
+  },
+  "apiKeyErrorStatus": {
+    "message": "API-limiet bereikt of ongeldige sleutel. Voer je persoonlijke TMDB-sleutel in om door te gaan."
+  },
+  "apiKeySavedStatus": {
+    "message": "Sleutel opgeslagen! Opnieuw laden..."
+  },
+  "errorMovies": {
+    "message": "Fout bij het laden van films"
+  },
+  "errorTv": {
+    "message": "Fout bij het laden van series"
+  },
+  "errorAnime": {
+    "message": "Fout bij het laden van anime"
+  },
+  "detailsLink": {
+    "message": "Details"
+  },
+  "airedLabel": {
+    "message": "Uitgezonden"
+  },
+  "episodeLabel": {
+    "message": "Aflevering $NUM$",
+    "placeholders": {
+      "num": {
+        "content": "$1"
+      }
+    }
+  },
+  "untitledLabel": {
+    "message": "Zonder titel"
+  },
+  "providerAttribution": {
+    "message": "Waar te kijken — gegevens van JustWatch"
+  },
+  "searchPlaceholder": {
+    "message": "Zoek in de releases van deze dag..."
+  },
+  "emptySearch": {
+    "message": "Geen titels komen overeen met je zoekopdracht."
+  },
+  "seasonEpisodeLabel": {
+    "message": "S$SEASON$ E$EPISODE$",
+    "placeholders": {
+      "season": {
+        "content": "$1"
+      },
+      "episode": {
+        "content": "$2"
+      }
+    }
+  }
+}

@@ -1,0 +1,48 @@
+Wondering when the next big Marvel movie hits theaters in your country? Whether your favorite anime has a new episode this week? Or what dropped on Netflix yesterday that everyone's posting about? NextUp shows you exactly what's releasing on any date — movies, TV shows, and anime — in one popup.
+
+Most release trackers make you bounce between Wikipedia, IMDb, streaming apps, and seasonal anime charts. NextUp pulls everything into one place, powered by TMDB (The Movie Database) and AniList. Click the toolbar icon, pick a date, see what's out. That's it.
+
+
+🎬 WHAT YOU GET
+
+▸ Three tabs, one popup — Movies, TV Shows, Anime. Switch instantly without leaving the page you're on.
+
+▸ Where to stream it — every title shows streaming logos for your country (Netflix, Prime Video, Crunchyroll, and more), so "what's out" becomes "what can I watch tonight." Watch-provider data by JustWatch.
+
+▸ Any date, any direction — use the arrows to jump to yesterday's releases, tomorrow's premieres, or check what dropped six weeks ago.
+
+▸ Exact episodes — TV cards show precisely which episode airs that day (S19 E7). Anime cards add airing countdowns and synopses.
+
+▸ Search any day — type a title and filter that date's releases as you type, original-language titles included.
+
+▸ Global or regional — see worldwide releases, or flip one dropdown to your country (US, UK, India, Japan, Brazil, and more — detected automatically).
+
+▸ Everything at a glance — posters, synopses, and ratings right on the card. No extra clicks, no new tabs.
+
+
+🎯 WHO IT'S FOR
+
+▸ Anime fans tracking weekly simulcasts and seasonal lineups — AniList means you're seeing the same release data the community trusts.
+
+▸ Binge watchers who want to know when the next episode of an ongoing series airs — and which service has it.
+
+▸ Movie fans keeping tabs on theatrical drops, streaming premieres, and limited releases.
+
+▸ Anyone tired of Googling "when does ___ come out" five times a week.
+
+
+🔒 PRIVACY & PERFORMANCE
+
+NextUp runs entirely in your browser. No accounts, no ads, no analytics, no data collection. The whole extension is about 30 KB, and today's lineup is cached so the popup paints instantly.
+
+A shared TMDB API key works out of the box. If you ever hit a rate limit, the popup lets you plug in your own free key right there.
+
+
+🌍 SPEAKS YOUR LANGUAGE
+
+English, Español, Português (Brasil), Français, Deutsch, Nederlands — with light and dark themes that follow your device automatically.
+
+
+━━━━━━━━━━━━━━━━━━━━
+
+Built and actively maintained by a solo developer. Got feedback or a feature request? Email ujjwalkr80@gmail.com — I actually read them.

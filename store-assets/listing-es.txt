@@ -1,0 +1,48 @@
+¿Te preguntas cuándo llega a los cines de tu país la próxima gran película de Marvel? ¿Si tu anime favorito tiene episodio nuevo esta semana? ¿O qué se estrenó ayer en Netflix que todo el mundo comenta? NextUp te muestra exactamente qué se estrena en cualquier fecha — películas, series y anime — en un solo popup.
+
+La mayoría de los rastreadores de estrenos te obligan a saltar entre Wikipedia, IMDb, apps de streaming y calendarios de anime de temporada. NextUp lo reúne todo en un solo lugar, con datos de TMDB (The Movie Database) y AniList. Haz clic en el icono de la barra de herramientas, elige una fecha y mira qué hay. Eso es todo.
+
+
+🎬 QUÉ OFRECE
+
+▸ Tres pestañas, un popup — Películas, Series y Anime. Cambia al instante sin salir de la página en la que estás.
+
+▸ Dónde verlo en streaming — cada título muestra los logos de los servicios disponibles en tu país (Netflix, Prime Video, Crunchyroll y más), así "qué se estrena" se convierte en "qué puedo ver esta noche". Datos de disponibilidad por JustWatch.
+
+▸ Cualquier fecha, en cualquier dirección — usa las flechas para saltar a los estrenos de ayer, los de mañana o ver qué salió hace seis semanas.
+
+▸ Episodios exactos — las series muestran qué episodio se emite ese día (S19 E7). El anime incluye cuenta regresiva y sinopsis.
+
+▸ Busca en cualquier día — escribe un título y filtra los estrenos de esa fecha al instante, incluidos los títulos en idioma original.
+
+▸ Global o regional — mira los estrenos de todo el mundo o cambia el selector a tu país (EE. UU., Reino Unido, India, Japón, Brasil y más — detectado automáticamente).
+
+▸ Todo de un vistazo — pósters, sinopsis y calificaciones directamente en la tarjeta. Sin clics extra, sin pestañas nuevas.
+
+
+🎯 PARA QUIÉN ES
+
+▸ Fans del anime que siguen simulcasts semanales y temporadas — con AniList ves los mismos datos en los que confía la comunidad.
+
+▸ Maratonistas de series que quieren saber cuándo sale el próximo episodio — y en qué plataforma.
+
+▸ Amantes del cine que siguen estrenos en salas, premieres en streaming y lanzamientos limitados.
+
+▸ Cualquiera cansado de googlear "cuándo sale ___" cinco veces por semana.
+
+
+🔒 PRIVACIDAD Y RENDIMIENTO
+
+NextUp funciona completamente en tu navegador. Sin cuentas, sin anuncios, sin analíticas, sin recopilación de datos. Toda la extensión pesa unos 30 KB y los estrenos de hoy se guardan en caché para que el popup se abra al instante.
+
+Una clave compartida de la API de TMDB funciona desde el primer momento. Si alguna vez alcanzas el límite, el propio popup te deja usar tu propia clave gratuita.
+
+
+🌍 HABLA TU IDIOMA
+
+English, Español, Português (Brasil), Français, Deutsch, Nederlands — con tema claro y oscuro que sigue automáticamente la configuración de tu dispositivo.
+
+
+━━━━━━━━━━━━━━━━━━━━
+
+Creada y mantenida activamente por un desarrollador independiente. ¿Comentarios o ideas? Escribe a ujjwalkr80@gmail.com — los leo de verdad.
